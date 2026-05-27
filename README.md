@@ -1,21 +1,31 @@
-# Next.js template
+# SaaS Starter Kit
+A minimal Next.js starter template with shadcn/ui for building SaaS landing pages and dashboards.
 
-This is a Next.js template with shadcn/ui.
+## Tech stack
 
-## Adding components
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Motion
+- shadcn/ui
 
-To add components to your app, run the following command:
+## Installation
+
+Node.js (18 or later) and npm are required.
+
+#### Clone, install dependencies, and run in development:
 
 ```bash
-npx shadcn@latest add button
+git clone <repository-url>
+cd saas-starter-kit
+npm install
+npm run dev
 ```
 
-This will place the ui components in the `components` directory.
+#### Build and run production:
 
-## Using components
-
-To use the components in your app, import them as follows:
-
-```tsx
-import { Button } from "@/components/ui/button";
+```bash
+npm run build
+npm start
 ```
