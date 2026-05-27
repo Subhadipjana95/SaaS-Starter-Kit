@@ -17,7 +17,7 @@ Node.js (18 or later) and npm are required.
 #### Clone, install dependencies, and run in development:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/Subhadipjana95/SaaS-Starter-Kit.git
 cd saas-starter-kit
 npm install
 npm run dev
