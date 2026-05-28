@@ -98,7 +98,7 @@ const WorkProcess = React.memo(() => {
     <img 
         src="/Side-BG3.png" 
         alt="Background decoration"
-        className="absolute right-[55rem] top-[55%] -translate-y-1/2 pointer-events-none z-0 hidden xl:block"
+        className="absolute right-22 top-[55%] -translate-y-1/2 pointer-events-none z-0 hidden xl:block"
         loading="lazy"
       />      
       <div className="mb-8 sm:mb-10 md:mb-12 mx-auto text-center">
@@ -120,8 +120,8 @@ const WorkProcess = React.memo(() => {
       </div>
       <div className="flex flex-col gap-6 sm:gap-8 md:gap-10">
         {/* Process 1 */}
-        <div className="process1 grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 lg:h-[28rem]">
-          <div className="w-full max-w-md mx-auto lg:mx-0 lg:max-w-none lg:w-[32rem] aspect-[4/5] lg:aspect-auto lg:h-full rounded-lg relative overflow-hidden flex justify-center lg:justify-end items-center lg:ml-6 xl:ml-12 order-1">
+        <div className="process1 grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 lg:h-122">
+          <div className="w-full max-w-md mx-auto lg:mx-0 lg:max-w-none lg:w-lg aspect-4/5 lg:aspect-auto lg:h-full rounded-lg relative overflow-hidden flex justify-center lg:justify-end items-center lg:ml-6 xl:ml-12 order-1">
             <img
               src={"/W1.png"}
               alt={"Student Build Profile and Upload Resume"}
@@ -146,7 +146,7 @@ const WorkProcess = React.memo(() => {
 
         {/* Process Connectors */}
         <div className="svgConnector1 w-full justify-center items-center -my-4 sm:-my-6 md:-my-8 hidden lg:flex">
-          <div className="w-[70%] md:w-[60%] max-w-[500px]">
+          <div className="w-[70%] md:w-[60%] max-w-125">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 356 126.116"
@@ -186,7 +186,7 @@ const WorkProcess = React.memo(() => {
         </div>
 
          {/* Process 2 */}
-        <div className="process2 grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 lg:h-[28rem]">
+        <div className="process2 grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 lg:h-122">
           <div className="w-full lg:w-[80%] xl:w-[60%] flex flex-col justify-center lg:justify-end items-start lg:items-end text-left lg:text-right px-4 sm:px-0 lg:ml-auto xl:ml-48 order-2 lg:order-1">
             <div className="h-10 w-12 sm:h-12 sm:w-14 flex items-center justify-center py-2 border-2 border-border rounded-lg text-2xl sm:text-3xl mb-3 sm:mb-4">
               02
@@ -199,7 +199,7 @@ const WorkProcess = React.memo(() => {
               College authority verifies authenticity of credentials
             </p>
           </div>
-          <div className="w-full max-w-md mx-auto lg:mx-0 lg:max-w-none lg:w-[32rem] aspect-[4/5] lg:aspect-auto lg:h-full relative overflow-hidden flex justify-center items-center border rounded-xl order-1 lg:order-2">
+          <div className="w-full max-w-md mx-auto lg:mx-0 lg:max-w-none lg:w-lg aspect-4/5 lg:aspect-auto lg:h-full relative overflow-hidden flex justify-center items-center border rounded-xl order-1 lg:order-2">
             <img
               src="/W2.png"
               alt="Verifier Approves and Verifies Credentials"
@@ -212,7 +212,7 @@ const WorkProcess = React.memo(() => {
 
         {/* Process Connectors */}
         <div className="svgConnector2 w-full justify-center items-center -my-4 sm:-my-6 md:-my-8 hidden lg:flex">
-          <div className="w-[70%] md:w-[60%] max-w-[500px]">
+          <div className="w-[70%] md:w-[60%] max-w-125">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 356 126.116" overflow="visible">
               <g>
                 <defs>
@@ -238,8 +238,8 @@ const WorkProcess = React.memo(() => {
         </div>
 
          {/* Process 3 */}
-        <div className="process3 grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 lg:h-[28rem]">
-          <div className="w-full max-w-md mx-auto lg:mx-0 lg:max-w-none lg:w-[32rem] aspect-[4/5] lg:aspect-auto lg:h-full rounded-lg relative overflow-hidden flex justify-center lg:justify-end items-center lg:ml-6 xl:ml-12 order-1">
+        <div className="process3 grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 lg:h-122">
+          <div className="w-full max-w-md mx-auto lg:mx-0 lg:max-w-none lg:w-lg aspect-4/5 lg:aspect-auto lg:h-full rounded-lg relative overflow-hidden flex justify-center lg:justify-end items-center lg:ml-6 xl:ml-12 order-1">
             <img
               src="/W3.png"
               alt="Alumni Refers Based on Verified Credentials"

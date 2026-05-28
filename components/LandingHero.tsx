@@ -4,7 +4,6 @@ import React, { useEffect, useRef } from "react";
 import { Blocks } from "lucide-react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { BorderBeam } from "./ui/border-beam";
 import { useTheme } from "next-themes";
 import { Button } from "./ui/button";
 
@@ -137,21 +136,9 @@ const LandingHero = React.memo(() => {
       <div ref={heroRef} className="upperHero container mx-auto px-4 sm:px-6 lg:px-8">
         <div
           ref={badgeRef}
-          className="inline-flex items-center gap-2 px-3 sm:px-4 py-[6px] rounded-full bg-[#248f74]/5 text-primary text-xs sm:text-sm font-medium mb-4 sm:mb-6 border"
+          className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 rounded-full bg-[#248f74]/5 text-primary text-xs sm:text-sm font-medium mb-4 sm:mb-6 border"
           style={{ opacity: 0 }}
         >
-          <BorderBeam
-            duration={8}
-            size={40}
-            reverse
-            className="from-transparent via-primary to-transparent"
-            initialOffset={20}
-            transition={{
-              type: "tween",
-              stiffness: 60,
-              damping: 20,
-            }}
-          />
           <Blocks className="w-3 h-3 sm:w-4 sm:h-4" />
           <span className="hidden xs:inline">Secure Tech</span>
           <span className="xs:hidden">Powered by Next Gen NLP</span>
@@ -192,14 +179,14 @@ const LandingHero = React.memo(() => {
 
       <div
         ref={lowerHeroRef}
-        className="lowerHero w-screen relative left-[50%] right-[50%] -mx-[50vw] bg-[url(/Gradient-bg.png)] bg-no-repeat bg-cover bg-center min-h-[400px] sm:min-h-[500px] md:min-h-[650px] lg:min-h-[750px] px-4 sm:px-8 md:px-16 lg:px-24 pb-0 flex items-end"
+        className="lowerHero w-screen relative left-[50%] right-[50%] mx-[-50vw] bg-[url(/Gradient-bg.png)] bg-no-repeat bg-cover bg-center min-h-100 sm:min-h-125 md:min-h-162.5 lg:min-h-187.5 px-4 sm:px-8 md:px-16 lg:px-24 pb-0 flex items-end"
         style={{ opacity: 0 }}
       >
         <div
           ref={imageContainerRef}
-          className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[650px] rounded-xl sm:rounded-2xl border-2 border-background/20 bg-border mt-20 sm:mt-32 md:mt-44 relative p-0.5 sm:p-1 will-change-transform"
+          className="w-full min-h-100 sm:min-h-125 md:min-h-162.5 lg:min-h-187.5 rounded-xl sm:rounded-2xl border-2 border-background/20 bg-border mt-20 sm:mt-32 md:mt-44 relative p-0.5 sm:p-1 will-change-transform"
         >
-          <div className="w-full h-full rounded-lg sm:rounded-xl overflow-hidden border-[1px] border-background/20 bg-background">
+          <div className="w-full h-full rounded-lg sm:rounded-xl overflow-hidden border-px border-background/20 bg-background">
             <img
               src={theme === "dark" ? "/P1.png" : "/P2.png"}
               alt="Product Preview"
@@ -210,7 +197,7 @@ const LandingHero = React.memo(() => {
             />
           </div>
         </div>
-        <div className="absolute bottom-0 left-0 right-0 h-40 sm:h-56 md:h-72 bg-gradient-to-t from-background via-background/50 to-transparent pointer-events-none"></div>
+        <div className="absolute bottom-0 left-0 right-0 h-40 sm:h-56 md:h-72 bg-linear-to-t from-background via-background/50 to-transparent pointer-events-none"></div>
       </div>
     </div>
   );
