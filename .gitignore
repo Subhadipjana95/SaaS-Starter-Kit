@@ -34,3 +34,5 @@ pnpm-debug.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+saas-starter-kit_v1.0.zip
