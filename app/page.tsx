@@ -1,7 +1,5 @@
 import React from 'react';
 import Navbar from '@/components/Navbar';
-import Features from '@/components/Features';
-import WorkProcess from '@/components/WorkProcess';
 import Footer from '@/components/Footer';
 
 
