@@ -1,9 +1,9 @@
 import React from 'react';
 import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
 import SectionDivider from '@/components/ui/SectionDivider';
 import Showcase from '@/components/Showcase';
+import Networks from '@/components/Networks';
 
 
 
@@ -18,9 +18,10 @@ const Page = () => {
           <SectionDivider />
           <Showcase />
           <SectionDivider />
+          <Networks />
+          <SectionDivider />
         </div>
       </main>
-      {/* <Footer /> */}
     </div>
   )
 }
