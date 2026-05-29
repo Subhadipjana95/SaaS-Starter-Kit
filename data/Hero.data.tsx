@@ -4,7 +4,7 @@
     statusText: "is live now.",
     ctaPrefix: "Apply",
     promoCode: "ZURF10",
-    promoText: "to avail 10,000 free credits on your first month.",
+    promoText: "to avail 10,000 free credits.",
   },
   badge: {
     version: "v1.0.0",

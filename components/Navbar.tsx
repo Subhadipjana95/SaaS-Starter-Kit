@@ -49,12 +49,12 @@ const Navbar = () => {
   }, [])
 
   return (
-    <header className="fixed top-3 left-1/2 z-50 w-[90%] -translate-x-1/2 rounded-xl border border-border bg-muted/80 md:top-0 md:left-0 md:w-full md:translate-x-0 md:rounded-none md:border-x-0 md:border-t-0 md:border-b md:bg-background">
-      <nav className="relative mx-auto flex h-11 w-full max-w-6xl items-center justify-between px-1.75 sm:px-0 md:h-16">
+    <header className="fixed top-3 left-1/2 z-50 w-[90%] -translate-x-1/2 rounded-lg border border-border bg-muted/40 backdrop-blur-md md:top-0 md:left-0 md:w-full md:translate-x-0 md:rounded-none md:border-x-0 md:border-t-0 md:border-b md:bg-background">
+      <nav className="relative mx-auto flex h-11 w-full max-w-6xl items-center justify-between px-1.25 sm:px-0 md:h-16">
         {/* Logo + Title */}
         <Link
           href="/"
-          className="tracking-snug ml-0.5 flex items-center gap-2 text-lg font-semibold text-foreground sm:ml-0 sm:text-xl"
+          className="tracking-snug ml-1 flex items-center gap-2 text-lg font-semibold text-foreground sm:ml-0 sm:text-xl"
         >
           {CompanyDetails.logo}
           <span>{CompanyDetails.title}</span>
