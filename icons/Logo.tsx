@@ -1,6 +1,11 @@
 import React from "react"
+import { cn } from "@/lib/utils"
 
-const Logo = () => (
+export type LogoProps = {
+  className?: string
+}
+
+const Logo = ({ className }: LogoProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="28"
@@ -8,7 +13,9 @@ const Logo = () => (
     viewBox="0 0 51 40"
     fill="none"
     id="Logo"
-    className="h-5 w-auto shrink-0 text-brand-color-3 dark:text-brand-color-1 [--color:var(--brand-color-3)] dark:[--color:var(--brand-color-1)]"
+    className={cn("h-5 w-auto shrink-0 text-brand-color-3 dark:text-brand-color-1 [--color:var(--brand-color-3)] dark:[--color:var(--brand-color-1)]",
+      className
+    )}
     aria-hidden="true"
   >
     <g id="logomark">

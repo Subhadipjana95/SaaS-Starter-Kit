@@ -7,7 +7,7 @@ import { ChevronDown } from "lucide-react"
 import { ThemeToggler } from "@/components/utilities/theme-toggler"
 import BrandButton from "@/components/ui/BrandButton"
 import { cn } from "@/lib/utils"
-import { navLinks, CompanyDetails } from "@/data/Data"
+import { navLinks, CompanyDetails } from "@/data/Navbar.data"
 import type { NavLink, MenuItem } from "@/types/Navbar"
 
 function hasItems(
@@ -50,7 +50,7 @@ const Navbar = () => {
 
   return (
     <header className="fixed top-3 left-1/2 z-50 w-[90%] -translate-x-1/2 rounded-xl border border-border bg-muted/80 md:top-0 md:left-0 md:w-full md:translate-x-0 md:rounded-none md:border-x-0 md:border-t-0 md:border-b md:bg-background">
-      <nav className="mx-auto flex h-11 w-full max-w-7xl items-center justify-between px-1.75 sm:px-6 md:h-16">
+      <nav className="relative mx-auto flex h-11 w-full max-w-6xl items-center justify-between px-1.75 sm:px-0 md:h-16">
         {/* Logo + Title */}
         <Link
           href="/"
@@ -61,7 +61,7 @@ const Navbar = () => {
         </Link>
 
         {/* Navigation Links */}
-        <div className="hidden items-center gap-3 md:flex">
+        <div className="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 items-center gap-3 md:flex">
           {navLinks.map((link) =>
             hasItems(link) ? (
               <div
@@ -76,7 +76,7 @@ const Navbar = () => {
                   type="button"
                   aria-expanded={productsOpen}
                   className={cn(
-                    "flex items-center gap-1 rounded-lg border border-transparent px-3 py-1.5 text-sm font-medium text-foreground/90 transition-colors",
+                    "flex items-center gap-1 rounded-lg border border-transparent px-3 py-1.5 text-sm font-medium text-muted-foreground transition-colors",
                     "hover:border-border/80 hover:bg-muted/50 hover:text-foreground",
                     productsOpen &&
                       "border-border/80 bg-muted/50 text-foreground shadow-sm"
@@ -137,7 +137,7 @@ const Navbar = () => {
                 key={link.label}
                 href={link.href}
                 className={cn(
-                  "rounded-lg border border-transparent px-3 py-1.5 text-sm font-medium text-foreground/90 transition-colors",
+                  "rounded-lg border border-transparent px-3 py-1.5 text-sm font-medium text-muted-foreground transition-colors",
                   "hover:border-border/80 hover:bg-muted/50 hover:text-foreground hover:shadow-sm"
                 )}
               >

@@ -2,7 +2,7 @@ import Link from "next/link"
 
 type BrandButtonProps = {
   href: string
-  label: string
+  label: React.ReactNode
   className?: string
 }
 
