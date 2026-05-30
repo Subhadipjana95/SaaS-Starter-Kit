@@ -1,6 +1,7 @@
 ﻿export const heroData = {
   alertBanner: {
     productName: "Zurik Agent",
+    href: "#",
     statusText: "is live now.",
     ctaPrefix: "Apply",
     promoCode: "ZURF10",

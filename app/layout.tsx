@@ -19,7 +19,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={cn("antialiased", fontMono.variable)}
+      className={cn("dark antialiased", fontMono.variable)}
     >
       <body className={cn(geist.className, "selection:bg-brand-color-1/10 selection:text-brand-color-3")}>
         {children}
