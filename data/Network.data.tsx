@@ -12,11 +12,11 @@ const IconMarker = ({
   tone: string
 }) => (
   <div
-    className={`flex h-5 sm:h-12 w-5 sm:w-12 items-center justify-center rounded-full border border-brand-color-2 bg-background transition-transform duration-200 ${tone}`}
+    className={`flex h-5 sm:h-10 w-5 sm:w-10 items-center justify-center rounded-full border border-brand-color-2 bg-background transition-transform duration-200 ${tone}`}
     title={title}
     aria-label={title}
   >
-    <Icon className="h-3 sm:h-6 w-3 sm:w-6 stroke-1 sm:stroke-[1.5]" />
+    <Icon className="h-3 sm:h-5 w-3 sm:w-5 stroke-1 sm:stroke-[1.5]" />
   </div>
 )
 

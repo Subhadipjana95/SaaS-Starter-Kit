@@ -16,9 +16,9 @@ const Page = () => {
         <div className="mx-auto flex w-full max-w-88 md:max-w-6xl flex-col border-x">
           <Hero />
           <SectionDivider />
-          <Networks />
-          <SectionDivider />
           <Showcase />
+          <SectionDivider />
+          <Networks />
           <SectionDivider />
         </div>
       </main>

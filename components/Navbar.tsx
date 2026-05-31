@@ -88,7 +88,7 @@ const Navbar = () => {
 
                 <div
                   className={cn(
-                    "pointer-events-none absolute top-[calc(100%-0.1rem)] left-1/3 w-[min(42rem,80vw)] origin-top -translate-x-1/3 rounded-xl border border-border/70 bg-background/95 p-2 opacity-0 shadow-2xl shadow-black/5 backdrop-blur-xl transition-all duration-200 ease-out",
+                    "pointer-events-none absolute top-[calc(100%-0.1rem)] left-1/3 w-[min(42rem,80vw)] origin-top -translate-x-1/3 rounded-xl border border-border/70 bg-background p-2 opacity-0 shadow-2xl shadow-black/5 backdrop-blur-xl transition-all duration-200 ease-out",
                     productsOpen
                       ? "pointer-events-auto translate-y-0 scale-100 opacity-100"
                       : "scale-95"
